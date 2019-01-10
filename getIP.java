@@ -38,6 +38,13 @@ public class GetIP
       
 		System.out.println(ipadd.getHostName() + "=" + ipadd.getHostAddress());
       	System.exit(0);
+		
+	// to get local ip and host addresses
+		InetAddress addr = InetAddress.getLocalHost();
+     		 System.out.println("Local HostAddress: "+addr.getHostAddress());
+      		String hostname = addr.getHostName();
+      		System.out.println("Local host name: "+hostname);
+
 
     
     }
